@@ -1,0 +1,49 @@
+/*
+Theme Name: ELLE CUSTORA
+Theme URI: https://github.com/cpcamento/wp-dress-shop
+Author: Christian Paul Camento
+Author URI: https://cpcamento.github.io/
+Description: A Dress Shop WordPress theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wp-dress-shop
+*/
+
+:root {
+  --theme-black: #2f2f2f;
+  --theme-white: #fefefe;
+}
+
+.top-header {
+  background-color: var(--theme-black);
+  color: var(--theme-white);
+  position: relative;
+}
+
+nav {
+  background-color: var(--theme-white) !important;
+}
+
+.top-header p {
+  margin: 0;
+  font-size: 12px;
+  display: none;
+  padding: 0.75rem 0;
+}
+
+.top-header p.active {
+  display: block;
+  animation: 2s totheright forwards;
+  display: block;
+}
+
+@keyframes totheright {
+  from {
+    text-align: right;
+  }
+
+  to {
+    text-align: center;
+  }
+}
