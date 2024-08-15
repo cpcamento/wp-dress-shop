@@ -22,12 +22,12 @@ class ElleKustoraTheme {
 
     public function enqueue_styles_scripts() {
         wp_enqueue_style('style', get_stylesheet_uri());
-        // Materialize CSS
-        wp_enqueue_style('materialize-style', get_template_directory_uri() . '/materialize/materialize.css', array(), '1.0', 'all');
+        // BOOTSTRAP CSS
+        wp_enqueue_style('materialize-style', get_template_directory_uri() . '/bootstrap/bootstrap.min.css', array(), '1.0', 'all');
         // Theme script
         wp_enqueue_script('theme-script', get_template_directory_uri() . '/elle-kustora.js', array('jquery'), '1.0', true);
-        // Materialize JS
-        wp_enqueue_script('materialize-script', get_template_directory_uri() . '/materialize/materialize.js', array(), '1.0', true);
+        // BOOTSTRAP JS
+        wp_enqueue_script('materialize-script', get_template_directory_uri() . '/bootstrap/bootstrap.min.js', array(), '1.0', true);
         // Localize script with AJAX URL and nonce
         wp_localize_script('theme-script', 'ajax_object', array(
             'ajax_url' => admin_url('admin-ajax.php'),
