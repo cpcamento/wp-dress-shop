@@ -11,8 +11,9 @@ Text Domain: wp-dress-shop
 */
 
 :root {
-  --theme-black: #2f2f2f;
-  --theme-white: #fefefe;
+  --theme-black: #001e2b;
+  --theme-white: #ffffff;
+  --theme-black-text: #5c6c75;
 }
 
 .top-header {
